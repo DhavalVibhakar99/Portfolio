@@ -1,0 +1,87 @@
+.profile {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  border-radius: 20%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.profile .last-name {
+  font-weight: 500;
+}
+
+.profile h4 {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-links .social-icon {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links .social-icon:hover {
+  color: #0073e6;
+}
+
+.contact-info {
+  width: 100%; /* Ensure it fills the container */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  gap: 12px; /* Add spacing between items */
+  margin-top: 10px; /* Add spacing above the contact info section */
+  padding-left: -100px; /* Reduce left padding for more left alignment */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(68, 86, 108); /* Text color */
+  line-height: 1.5; /* Improve readability */
+}
+
+.contact-item .contact-icon {
+  margin-right: 8px; /* Space between the icon and text */
+  color: rgb(68, 86, 108); /* Icon color */
+}
+
+.contact-item .email-link {
+  color: rgb(68, 86, 108); /* Text color */
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth hover effect */
+  overflow-wrap: break-word; /* Break long text for emails */
+}
+
+.contact-item .email-link:hover {
+  color: rgb(68, 86, 108); /* Hover color */
+}
+

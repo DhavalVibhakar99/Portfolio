@@ -1,0 +1,102 @@
+/* Services Section */
+.services-section {
+    padding: 40px;
+    background-color: #ffffff; /* Light grey background */
+    margin-top: 80px;
+    border-radius: 20px;
+  }
+  
+  .services-header {
+    position: relative; /* Position relative to services-section */
+    margin-bottom: 30px; /* Add spacing below the header */
+    margin-top: -100px; /* Move the header visually upward (outside container) */
+    margin-left: -40px;
+  }
+  
+   /* Service Title outside */
+   .services-title {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(68, 86, 108);
+    position: relative;
+    margin-top: 20px;
+  }
+ 
+  
+  .services-title::before {
+    content: "";
+    position: absolute;
+    bottom: -11px; /* Position the blue line */
+    left: 0;
+    width: 30px; /* Adjust as per your design */
+    height: 4px;
+    background-color: rgb(93, 123, 255); /* Blue */
+    z-index: 0; /* Make sure blue is below orange */
+    border-radius: 4px
+}
+  
+  .services-title::after {
+    content: "";
+    position: absolute;
+    bottom: -11px; /* Position the orange line slightly above the blue */
+    left: 0;
+    width: 10px; /* Adjust as per your design */
+    height: 4px;
+    background-color: rgb(255, 115, 0); /* Orange */
+    z-index: 1; /* Make sure orange is above blue */
+    border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr; /* One card per row for smaller screens */
+  }
+}
+
+  
+  /* Services Container */
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards in a row */
+    gap: 20px; /* Add spacing between cards */
+    margin-top: 20px;
+    border-radius: 100px;
+  }
+  
+  /* Service Card */
+  .service-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center align card content */
+  display: flex;
+  flex-direction: column; /* Stack title and description vertically */
+  justify-content: flex-start; /* Align content to the top */
+  height: auto;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Services Title */
+  .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(68, 86, 108); /* Dark text color */
+    position: relative; 
+    margin-top: 10px;
+  }
+  
+  /* Service Description */
+  .service-description {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin-top: -10px;
+  }
+  
+  

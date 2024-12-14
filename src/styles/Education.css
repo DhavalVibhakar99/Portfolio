@@ -1,0 +1,101 @@
+/* Education Section */
+.education-section {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 60px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Education Title */
+.education-header {
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+
+.education-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(68, 86, 108); /* Dark text color */
+    position: relative;
+    margin-left: 10px; /* Align with other sections */
+}
+
+.education-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Align with blue line */
+    left: 0;
+    width: 40px; /* Blue line width */
+    height: 4px;
+    background-color: rgb(93, 123, 255); /* Blue color */
+    border-radius: 4px;
+}
+
+.education-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 15px; /* Orange line width */
+    height: 4px;
+    background-color: rgb(255, 115, 0); /* Orange color */
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Education Container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Individual Education Item */
+.education-item {
+    padding: 15px 10px;
+    border-left: 5px solid rgb(93, 123, 255); /* Blue accent line */
+    background-color: #ffffff; /* White background for individual items */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for items */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effect */
+}
+
+.education-item:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Degree */
+.education-degree {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(68, 86, 108);
+    margin-bottom: 5px;
+}
+
+/* Institution */
+.education-institution {
+    font-size: 16px;
+    color: rgb(95, 111, 129);
+    margin-bottom: 5px;
+}
+
+/* Date */
+.education-date {
+    font-size: 14px;
+    color: #555555;
+    font-style: italic; /* Subtle emphasis */
+    margin-bottom: 10px;
+}
+
+/* Description */
+.education-description {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}

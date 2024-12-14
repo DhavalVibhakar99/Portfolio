@@ -1,0 +1,91 @@
+/* Get in Touch Section */
+.get-in-touch-section {
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .get-in-touch-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(68, 86, 108);
+    margin-bottom: 20px;
+  }
+  
+  .get-in-touch-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .get-in-touch-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(95, 111, 129);
+  }
+  
+  .get-in-touch-form input,
+  .get-in-touch-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .get-in-touch-form .send-message-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-in-touch-form .send-message-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .popup-content .popup-icon {
+    font-size: 36px;
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgb(68, 86, 108);
+  }
+  
+  .popup-content .close-popup-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-content .close-popup-button:hover {
+    background-color: #2563eb;
+  }
+  

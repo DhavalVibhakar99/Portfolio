@@ -1,0 +1,37 @@
+.title {
+    font-size: 30px; /* Adjust font size */
+    font-weight: bold;
+    position: relative; 
+}
+  
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -11px; /* Position the blue line */
+    left: 0;
+    width: 30px; /* Adjust as per your design */
+    height: 4px;
+    background-color: rgb(93, 123, 255); /* Blue */
+    z-index: 0; /* Make sure blue is below orange */
+    border-radius: 4px
+}
+.description-text {
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px; /* Set font size to 10px */
+    color: rgb(68, 86, 108); /* Optional: Use a standard text color */
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
+  
+  
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -11px; /* Position the orange line slightly above the blue */
+    left: 0;
+    width: 10px; /* Adjust as per your design */
+    height: 4px;
+    background-color: rgb(255, 115, 0); /* Orange */
+    z-index: 1; /* Make sure orange is above blue */
+    border-radius: 4px;
+}

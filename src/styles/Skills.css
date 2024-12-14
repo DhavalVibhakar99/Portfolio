@@ -1,0 +1,120 @@
+/* Skills Section */
+.skills-section {
+    width: 100%;
+    max-width: 590px;
+    margin-left: -20px;
+    padding:29px;
+    margin-top: -60px;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+}
+
+/* Skills Title Outside the Card */
+.skills-header {
+    margin-bottom: 30px;
+}
+
+.skills-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(68, 86, 108); /* Dark text color */
+    position: relative;
+    margin-left: -20px; /* Align with other sections */
+}
+
+.skills-title::before {
+    content: "";
+    position: absolute;
+    bottom: -11px; /* Align with blue line */
+    left: 0;
+    width: 30px; /* Blue line width */
+    height: 4px;
+    background-color: rgb(93, 123, 255); /* Blue color */
+    border-radius: 4px;
+}
+
+.skills-title::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 10px; /* Orange line width */
+    height: 4px;
+    background-color: rgb(255, 115, 0); /* Orange color */
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Skills Container */
+.skills-container {
+    width: 100%;
+    max-width: 900px; /* Constrain width for better layout */
+    margin-left: -12px; /* Center-align the container */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 10px;
+    margin-top: -5px;
+    padding-bottom: 20px;
+    /* Add spacing inside the container */
+}
+
+/* Skill Item */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+}
+
+/* Skill Name */
+.skill-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Progress Container */
+.progress-container {
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Limit max width */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 10px;
+    height: 20px; /* Adjust height */
+    overflow: hidden; /* Prevent overflow */
+     /* Prevent overflow */
+    position: relative;
+    margin-left: 10px;
+}
+
+/* Progress Bar */
+.progress {
+    background-color: #3b82f6; /* Blue color */
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease; 
+    transition: width 0.3s ease; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align percentage to the right within the bar */
+    padding-right: 10px; /* Add spacing for the text inside the bar */
+    position: relative;
+    color: #ffffff; /* White text color for contrast */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold /* Adjust font size */ /* Shift the progress bar */
+}
+.progress-percentage {
+    position: absolute; /* Ensure it stays inside the progress bar */
+    right: 10px; /* Keep it near the right edge */
+    color: #ffffff; /* Match text color to ensure readability */
+    font-size: 12px; /* Smaller text size */
+    font-weight: bold;
+    z-index: 2; /* Ensure it appears above the bar */
+   
+}
+.skills-container {
+    overflow-x: hidden;
+  }

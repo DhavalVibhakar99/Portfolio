@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #EFEFF6; /* Light grey background */
+    display: flex;
+    justify-content: center; /* Center the white page horizontally */
+    align-items: flex-start; /* Start aligning at the top */
+    padding: 20px; /* Add spacing around the white page */
+    height: 100%; /* Ensure it spans full height */
+    
+}
+
+/* App Container */
+.app {
+    display: flex;
+    flex-direction: column; /* Align navbar and white page vertically */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+ /* Navigation Bar */
+ .navbar {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    box-shadow: 0 0px 0px rgba(95, 111, 129);
+    padding-right: 20px;
+    z-index: 3;
+    border-top-left-radius: 100px;
+    position:relative;
+  }
+  
+  /* Navigation Links */
+  .navbar-links {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(95, 111, 129);
+    padding: 0px;
+  }
+
+/* Navigation Container */
+.navigation-container {
+    position: relative;
+    width: 656.62px; /* Navigation width */
+    height: 70px; /* Navigation height */
+    margin: 90 auto; /* Center horizontally */
+    background-color: #ffffff; /* Background color for navigation */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin-left: 295px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 30px;
+    padding-left: 0px;
+  }
+  
+  
+  /* Wave Image */
+  .wave-image {
+    position: absolute;
+    top: -0.2px; /* Adjust the wave height */
+    left: -89.5px; /* Align wave with the navigation */
+    height: 69px; /* Ensure height matches the design */
+    z-index: 1; /* Send wave behind the navbar */
+    filter: brightness(0) invert(1)
+    
+  }
+  .wave-container {
+    position: absolute;
+    top: 0px; /* Align with the top of the navbar */
+    left: 0; /* Start from the left edge */
+    width: 150px; /* Adjust width if needed */
+    height: 80px; /* Reduce the height */
+    z-index: 1; /* Ensure it's below the navbar */
+    overflow: hidden;
+    background-color: white;
+  }
+
+/* Sidebar */
+.sidebar {
+  background-color: #f4f4f4; /* Light grey background */
+  width: 250px; /* Sidebar width */
+  min-height: 100vh; /* Ensure it spans the full viewport height */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width/height */
+  border-right: 0px solid #ddd; /* Optional border to separate */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: sticky; /* Keeps the sidebar sticky */
+  top: 0; /* Start from the top */
+}
+
+/* White Page */
+.white-page {
+  background-color: #ffffff; /* White background */
+  width: 68%; /* Match reduced navbar width */
+  height: auto; /* Dynamically adjust height */
+  min-height: 100vh; /* Ensure at least full viewport height */
+  border-radius: 0px; /* No rounded corners */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Include sidebar and main content */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin-top: -4px; /* Ensure no space between navbar and the page */
+  position: relative;
+  z-index: 2; /* Ensure it stays above the wave */
+  border-top-left-radius: 30px;
+  
+}
+.sidebar-content {
+    position: sticky; /* Enables sticky behavior */
+    top: 0; /* Starts at the top */
+    z-index: 10; /* Keeps it above other elements */
+    width: 100%; /* Ensures it doesn't overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+.main-content section {
+    margin-bottom: 40px;
+}
+
+.main-content h2 {
+    font-size: 1.8rem;
+    color: rgb(68, 86, 108);
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+
+  
